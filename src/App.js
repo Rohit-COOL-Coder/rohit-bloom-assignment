@@ -43,7 +43,7 @@ function App() {
           }, 
           () => {
             getDownloadURL(uploadTask.snapshot.ref).then( async(downloadURL) => {
-            alert("Use this link to view your file" ,downloadURL)
+            alert(downloadURL)
             });
           }
         );
